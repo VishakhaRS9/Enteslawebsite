@@ -1,0 +1,34 @@
+{
+    "title": { "first": "We specializes in transforming <br />your ideas into", "second": "innovative, cutting-edge solutions" },
+    "subtitle": { "first": "Ideas", "second": "Realised" },
+    "button": { "label": "Let’s Talk", "link": "/contact" },
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "slides": [
+        {
+            "image": "img/photo/1.jpg"
+        },
+        {
+            "image": "img/photo/2.jpg"
+        },
+        {
+            "image": "img/photo/3.jpg"
+        }
+    ],
+    "items": [
+        {
+            "label": "Hardware",
+            "title": "Experts",
+            "text": "And here's some amazing content. It's very engaging. Right?"
+        },
+        {
+            "label": "Firmware",
+            "title": "Experts",
+            "text": "And here's some amazing content. It's very engaging. Right?"
+        },
+        {
+            "label": "Software",
+            "title": "Experts",
+            "text": "And here's some amazing content. It's very engaging. Right?"
+        }
+    ]
+}
