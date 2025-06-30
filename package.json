@@ -5,10 +5,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "netlify build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/next": "^1.4.9",
     "gray-matter": "^4.0.3",
     "next": "^13.4.3",
     "react": "^18.2.0",
