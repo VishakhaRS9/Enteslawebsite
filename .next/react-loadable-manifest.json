@@ -1,0 +1,50 @@
+{
+  "home-2.jsx -> ../components/sliders/Courses": {
+    "id": "home-2.jsx -> ../components/sliders/Courses",
+    "files": [
+      "static/chunks/src_components_sliders_Courses_jsx.js"
+    ]
+  },
+  "home-2.jsx -> ../components/sliders/Events": {
+    "id": "home-2.jsx -> ../components/sliders/Events",
+    "files": [
+      "static/chunks/src_components_sliders_Events_jsx.js"
+    ]
+  },
+  "home-2.jsx -> ../components/sliders/Hero": {
+    "id": "home-2.jsx -> ../components/sliders/Hero",
+    "files": [
+      "static/chunks/src_components_sliders_Hero_jsx.js"
+    ]
+  },
+  "home-2.jsx -> ../components/sliders/Services": {
+    "id": "home-2.jsx -> ../components/sliders/Services",
+    "files": [
+      "static/chunks/src_components_sliders_Services_jsx.js"
+    ]
+  },
+  "index.jsx -> ../components/sliders/HeroSlideshow": {
+    "id": "index.jsx -> ../components/sliders/HeroSlideshow",
+    "files": [
+      "static/chunks/src_components_sliders_HeroSlideshow_jsx.js"
+    ]
+  },
+  "index.jsx -> ../components/sliders/LatestPosts": {
+    "id": "index.jsx -> ../components/sliders/LatestPosts",
+    "files": [
+      "static/chunks/src_components_sliders_LatestPosts_jsx.js"
+    ]
+  },
+  "index.jsx -> ../components/sliders/LatestProjects": {
+    "id": "index.jsx -> ../components/sliders/LatestProjects",
+    "files": [
+      "static/chunks/src_components_sliders_LatestProjects_jsx.js"
+    ]
+  },
+  "index.jsx -> ../components/sliders/Testimonial": {
+    "id": "index.jsx -> ../components/sliders/Testimonial",
+    "files": [
+      "static/chunks/src_components_sliders_Testimonial_jsx.js"
+    ]
+  }
+}

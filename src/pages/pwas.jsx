@@ -31,7 +31,7 @@ const Project = () => {
           <div className="row flex-sm-row-reverse justify-content-between">
             <div className="col-lg-4 col-xl-3">
               <div class="mil-project-cover-info">
-             <img src="img/projects/Info.jpg" alt="Info"/></div>
+             <img src="img/projects/pwasInfo.jpg" alt="Info"/></div>
             </div>
             <div className="col-lg-7 col-xl-8">
               <span className="mil-suptitle mil-suptitle-2 mil-mb-30">
@@ -219,7 +219,7 @@ The highly customizable system supports configurable alert thresholds, detection
             </div>
             <div className="col-xl-6 mil-mb-60">
               <div className="mil-project-cover">
-                <img src="img/projects/Problem.png" alt="Problem" />
+                <img src="img/projects/pwasProblem.jpg" alt="Problem" />
               </div>
             </div>
           </div>
@@ -283,7 +283,7 @@ The highly customizable system supports configurable alert thresholds, detection
             </div>
             <div className="col-xl-6 mil-mb-60">
               <div className="mil-project-cover">
-                <img src="img/projects/Solution.png" alt="Solution" />
+                <img src="img/projects/pwasSolution.jpg" alt="Solution" />
               </div>
             </div>
           </div>
