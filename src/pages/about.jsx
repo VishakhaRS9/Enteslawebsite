@@ -21,7 +21,7 @@ const About = () => {
             <div className="col-lg-12 col-xl-6">
               <div className="mil-adaptive-right">
                 <a
-                  href="#."
+                  href="contact"
                   className="mil-button mil-border mil-mr-15 mil-mb-30"
                 >
                   <span>Talk To an Expert</span>
@@ -49,7 +49,7 @@ const About = () => {
               <div className="mil-circle-illustration">
                 <div className="mil-circle-bg" />
                 <div className="mil-image-frame">
-                  <img src="img/faces/t3.png" alt="img" />
+                  <img src="img/photo/TransformingIdeas.jpg" alt="img" />
                 </div>
               </div>
             </div>
@@ -112,12 +112,13 @@ const About = () => {
           <div className="row justify-content-between">
             <div className="col-lg-5">
               <div className="mil-h1">
-                15<span className="mil-accent">+</span>
+                15<span className="mil-accent">+ </span><span className="smallFont">Years Experience</span>
               </div>
-              <h6 className="mil-mb-60">Years Experience</h6>
-              <h2 className="mil-mb-60">
-                We Run All Kinds of IT Services That Vow Your Success
-              </h2>
+             
+              <h3 className="mil-mb-60">
+                With over a decade and a half of expertise, Entesla delivers innovative, end-to-end electronic engineering solutions reliably.
+
+              </h3>
             </div>
             <div className="col-lg-6">
               <h3 className="mil-mb-60">
@@ -131,29 +132,28 @@ const About = () => {
               <div className="row">
                 <div className="col-lg-6">
                   <h6 className="mil-mb-30">
-                    <span className="mil-accent">16+</span>&nbsp; Software
+                    <span className="mil-accent">100+</span>&nbsp; Products
                     Development
                   </h6>
                   <div className="mil-divider mil-divider-left mil-mb-60" />
                 </div>
                 <div className="col-lg-6">
                   <h6 className="mil-mb-30">
-                    <span className="mil-accent">3+</span>&nbsp; Years Client
-                    Engagement
+                    <span className="mil-accent">25+</span>&nbsp; End to End 
+                    Solutions
                   </h6>
                   <div className="mil-divider mil-divider-left mil-mb-60" />
                 </div>
                 <div className="col-lg-6">
                   <h6 className="mil-mb-30">
-                    <span className="mil-accent">360+</span>&nbsp; App
+                    <span className="mil-accent">80+</span>&nbsp; Man-years of experience
                     Development
                   </h6>
                   <div className="mil-divider mil-divider-left mil-mb-60" />
                 </div>
                 <div className="col-lg-6">
                   <h6 className="mil-mb-30">
-                    <span className="mil-accent">520+</span>&nbsp; Web
-                    Development
+                    <span className="mil-accent">50+</span>&nbsp; Clients Engagement
                   </h6>
                   <div className="mil-divider mil-divider-left mil-mb-60" />
                 </div>
@@ -166,32 +166,7 @@ const About = () => {
       <div className="container">
         <div className="mil-divider" />
       </div>
-      {/* partners */}
-      <div className="mil-partners mil-p-120-90">
-        <div className="container">
-          <div className="mil-partners-frame">
-            <a href="#.">
-              <img src="img/partners/1.png" alt="partner" />
-            </a>
-            <a href="#.">
-              <img src="img/partners/2.png" alt="partner" />
-            </a>
-            <a href="#.">
-              <img src="img/partners/3.png" alt="partner" />
-            </a>
-            <a href="#.">
-              <img src="img/partners/4.png" alt="partner" />
-            </a>
-            <a href="#.">
-              <img src="img/partners/5.png" alt="partner" />
-            </a>
-            <a href="#.">
-              <img src="img/partners/6.png" alt="partner" />
-            </a>
-          </div>
-        </div>
-      </div>
-      {/* partners end */}
+     
       {/* about */}
       <section className="mil-deep-bg mil-p-120-60">
         <div className="mil-deco" style={{ top: 0, right: "15%" }} />
@@ -201,13 +176,13 @@ const About = () => {
               <div className="mil-circle-illustration">
                 <div className="mil-circle-bg" />
                 <div className="mil-image-frame">
-                  <img src="img/faces/t2.png" alt="img" />
+                  <img src="img/photo/Mission.jpg" alt="img" />
                 </div>
               </div>
             </div>
             <div className="col-lg-6 mil-mb-60">
               <span className="mil-suptitle mil-suptitle-2 mil-mb-30">
-                IT Enterprise
+                Embedded System
               </span>
               <h2 className="mil-mb-50"> Mission</h2>
               <p className="mil-mb-50">
@@ -343,11 +318,7 @@ const About = () => {
                 </div>
                 <div className="mil-box-text">
                   <h4 className="mil-mb-30">Innovation</h4>
-                  <p className="mil-box-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                 
                 </div>
               </div>
             </div>
@@ -359,11 +330,7 @@ const About = () => {
                 <div className="mil-box-text">
                   <h4 className="mil-mb-30">Commitment
 </h4>
-                  <p className="mil-box-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                 
                 </div>
               </div>
             </div>
@@ -374,11 +341,7 @@ const About = () => {
                 </div>
                 <div className="mil-box-text">
                   <h4 className="mil-mb-30">Compassion</h4>
-                  <p className="mil-box-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                 
                 </div>
               </div>
             </div>
@@ -389,11 +352,7 @@ const About = () => {
                 </div>
                 <div className="mil-box-text">
                   <h4 className="mil-mb-30">Integrity</h4>
-                  <p className="mil-box-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                 
                 </div>
               </div>
             </div>
@@ -404,11 +363,7 @@ const About = () => {
                 </div>
                 <div className="mil-box-text">
                   <h4 className="mil-mb-30">Teamwork</h4>
-                  <p className="mil-box-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                
                 </div>
               </div>
             </div>
@@ -418,12 +373,8 @@ const About = () => {
                   <img src="img/icons/md/10.svg" alt="icon" />
                 </div>
                 <div className="mil-box-text">
-                  <h4 className="mil-mb-30">???</h4>
-                  <p className="mil-box-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
+                  <h4 className="mil-mb-30">Support</h4>
+                  
                 </div>
               </div>
             </div>
