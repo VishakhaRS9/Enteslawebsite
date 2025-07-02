@@ -46,15 +46,9 @@ const DefaultHeader = ({ transparent, headerTop, extarClass }) => {
           <div className={`mil-navigation ${toggle ? "mil-active" : ""}`}>
             <nav>
               <ul>
-                <li className="mil-has-children">
-                  <Link href="/">Enterprise</Link>
-                  <ul>
-                    
-                    <li>
-                      <Link href="about">About us</Link>
-                    </li>
-                 
-                  </ul>
+                <li >
+                  <Link href="about">About us</Link>
+                  
                 </li>
                   <li className="mil-has-children">
                   <Link href="services">Services</Link>
