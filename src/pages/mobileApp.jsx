@@ -16,7 +16,7 @@ const Project = () => {
         />
         <div className="mil-banner-content">
           <div className="container mil-relative">
-            <Link href="portfolio" className="mil-link link-left mil-mb-30">
+            <Link href="services" className="mil-link link-left mil-mb-30">
               <i className="fas fa-arrow-left" />
               <span>Services</span>
             </Link>
@@ -29,10 +29,10 @@ const Project = () => {
       <section className="mil-p-120-90">
         <div className="container">
           <div className="row flex-sm-row-reverse justify-content-between">
-            <div className="col-lg-4 col-xl-3">
-              <div class="mil-project-cover-info"><img src="img/projects/Info.jpg" alt="Info"/></div>
+            <div className="col-lg-5 col-xl-4">
+              <div class="mil-project-cover-service"><img src="img/projects/mobileApp.jpg" alt="Mobile App Development"/></div>
             </div>
-            <div className="col-lg-7 col-xl-8">
+            <div className="col-lg-6 col-xl-7">
               <span className="mil-suptitle mil-suptitle-2 mil-mb-30">
                 Overview
               </span>
