@@ -29,36 +29,14 @@ const Header2 = () => {
         {/* mil-top-panel-transparent */}
         <div className="container">
           <Link href="/" legacyBehavior>
-            <a className="mil-logo" style={{ width: 140 }} />
+            <a className="mil-logo" style={{ width: 160 }} />
           </Link>
           <div className="mil-navigation">
             <nav>
               <ul>
                 <li className="mil-has-children">
-                  <Link href="/">Enterprise</Link>
-                  <ul>
-                    <li>
-                      <Link href="about">About us</Link>
-                    </li>
-                    <li>
-                      <Link href="team">Team</Link>
-                    </li>
-                    <li>
-                      <Link href="team-single">Team Member</Link>
-                    </li>
-                    <li>
-                      <Link href="careers.html">Careers</Link>
-                    </li>
-                    <li>
-                      <Link href="prices">Prices</Link>
-                    </li>
-                    <li>
-                      <Link href="faq">FAQ</Link>
-                    </li>
-                    <li>
-                      <Link href="event">Event</Link>
-                    </li>
-                  </ul>
+                  <Link href="about">About Us</Link>
+                
                 </li>
                 <li>
                   <Link href="portfolio">Case Studies</Link>
