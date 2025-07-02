@@ -49,9 +49,7 @@ const DefaultHeader = ({ transparent, headerTop, extarClass }) => {
                 <li className="mil-has-children">
                   <Link href="/">Enterprise</Link>
                   <ul>
-                    <li>
-                      <Link href="home-2">Home V2</Link>
-                    </li>
+                    
                     <li>
                       <Link href="about">About us</Link>
                     </li>
@@ -59,44 +57,45 @@ const DefaultHeader = ({ transparent, headerTop, extarClass }) => {
                   </ul>
                 </li>
                   <li className="mil-has-children">
-                  <Link href="service-1">Services</Link>
+                  <Link href="services">Services</Link>
                   <ul>
+                     <li>
+                      <Link href="customDesign">Customised Design Services</Link>
+                    </li>
+                    <li>
+                      <Link href="iot">IOT</Link>
+                    </li>
                     <li>
                       <Link href="monitoring">Monitoring</Link>
                     </li>
                     <li>
                       <Link href="mobileApp">Mobile App Development</Link>
                     </li>
-                    <li>
-                      <Link href="iot">IOT</Link>
-                    </li>
-                    <li>
-                      <Link href="customDesign">Customised Design Services</Link>
-                    </li>
-                  </ul>
+                   </ul>
                 </li>
                    <li className="mil-has-children">
                   <Link href="portfolio">Case Studies</Link>
                    <ul>
-                    <li>
-                      <Link href="dws">DWS</Link>
+                      <li>
+                      <Link href="pwas">Proximity Warning Alarm System</Link>
                     </li>
                     <li>
-                      <Link href="fms">FMS</Link>
+                      <Link href="dws">Dimensioning Weighing System</Link>
+                    </li>
+                     <li>
+                      <Link href="gds">Gas Detection System
+</Link>
+                    </li>
+                     <li>
+                      <Link href="swpms">Solar Pump Monitoring</Link>
+                    </li>
+                     <li>
+                      <Link href="kms">Key Management System</Link>
                     </li>
                     <li>
-                      <Link href="gds">GDS</Link>
+                      <Link href="fms">Facility Management</Link>
                     </li>
-                    <li>
-                      <Link href="kms">KMS</Link>
-                    </li>
-                    <li>
-                      <Link href="pwas">PWAS</Link>
-                    </li>
-                    <li>
-                      <Link href="swpms">SWPMS</Link>
-                    </li>
-                  </ul>
+                   </ul>
                 </li>
               
                
