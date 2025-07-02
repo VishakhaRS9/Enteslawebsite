@@ -70,7 +70,7 @@ const Solution1 = () => {
         <div className="container">
           <div className="mil-text-center mil-mb-90">
             <span className="mil-suptitle mil-suptitle-2 mil-mb-30">
-             Innovative Solutions | Bespoke Designs | End-to-End Development
+             Innovative Solutions <span className="mil-accent">|</span>  Bespoke Designs <span className="mil-accent">|</span>  End-to-End Development
             </span>
             {/* <h2>
               AI Consulting and Development Company <br /> With{" "}
