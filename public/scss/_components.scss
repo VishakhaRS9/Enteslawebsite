@@ -287,7 +287,7 @@ top panel
         box-shadow: none;
 
         & .mil-logo {
-            background-image: url(../img/logo/logo-light.png);
+            background-image: url(../img/logo/entesla-logo_light.png);
         }
 
         & .mil-navigation {
@@ -987,7 +987,7 @@ illustration
         overflow: hidden;
 
         & img {
-            filter: grayscale(100%);
+            // filter: grayscale(100%);
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -3359,7 +3359,7 @@ project
     border-radius: 10px;
 
     & img {
-        filter: grayscale(100%);
+        // filter: grayscale(100%);
         position: absolute;
         top: 0;
         left: 0;
@@ -3367,25 +3367,25 @@ project
         height: 100%;
         object-position: center;
         object-fit: cover;
-        transition: $t-md;
+        // transition: $t-md;
     }
 
-    &:after {
-        content: '';
-        width: 30%;
-        padding-bottom: 30%;
-        background-color: $accent;
-        position: absolute;
-        bottom: -15%;
-        left: -10%;
-        border-radius: 50%;
-    }
+    // &:after {
+    //     content: '';
+    //     width: 30%;
+    //     padding-bottom: 30%;
+    //     background-color: $accent;
+    //     position: absolute;
+    //     bottom: -15%;
+    //     left: -10%;
+    //     border-radius: 50%;
+    // }
 
-    &:hover {
-        & img {
-            filter: grayscale(0)
-        }
-    }
+    // &:hover {
+    //     & img {
+    //         filter: grayscale(0)
+    //     }
+    // }
 
     &.mil-type-2 {
         &:after {
@@ -3407,7 +3407,7 @@ project
     border-radius: 10px;
 
     & img {
-        filter: grayscale(100%);
+        // filter: grayscale(100%);
         position: absolute;
         top: 0;
         left: 0;
@@ -3415,25 +3415,25 @@ project
         height: 100%;
         object-position: center;
         object-fit: cover;
-        transition: $t-md;
+        // transition: $t-md;
     }
 
-    &:after {
-        content: '';
-        width: 30%;
-        padding-bottom: 30%;
-        background-color: $accent;
-        position: absolute;
-        bottom: -7%;
-        left: -10%;
-        border-radius: 50%;
-    }
+    // &:after {
+    //     content: '';
+    //     width: 30%;
+    //     padding-bottom: 30%;
+    //     background-color: $accent;
+    //     position: absolute;
+    //     bottom: -7%;
+    //     left: -10%;
+    //     border-radius: 50%;
+    // }
 
-    &:hover {
-        & img {
-            filter: grayscale(0)
-        }
-    }
+    // &:hover {
+    //     & img {
+    //         filter: grayscale(0)
+    //     }
+    // }
 
     &.mil-type-2 {
         &:after {
@@ -3451,7 +3451,7 @@ project
     margin-top: 95px;
 
      & img {
-        filter: grayscale(100%);
+        // filter: grayscale(100%);
         position: absolute;
         top: 0;
         left: 0;
@@ -3459,25 +3459,25 @@ project
         height: 100%;
         object-position: center;
         object-fit: cover;
-        transition: $t-md;
+        // transition: $t-md;
     }
 
-    &:after {
-        content: '';
-        width: 30%;
-        padding-bottom: 30%;
-        background-color: $accent;
-        position: absolute;
-        bottom: -7%;
-        left: -10%;
-        border-radius: 50%;
-    }
+    // &:after {
+    //     content: '';
+    //     width: 30%;
+    //     padding-bottom: 30%;
+    //     background-color: $accent;
+    //     position: absolute;
+    //     bottom: -7%;
+    //     left: -10%;
+    //     border-radius: 50%;
+    // }
 
-    &:hover {
-        & img {
-            filter: grayscale(0)
-        }
-    }
+    // &:hover {
+    //     & img {
+    //         filter: grayscale(0)
+    //     }
+    // }
 
     &.mil-type-2 {
         &:after {
@@ -3554,7 +3554,7 @@ footer
     position: relative;
 
     & .mil-logo {
-        width: 120px;
+        width: 160px;
     }
 
     & .mil-list-title {
@@ -3767,4 +3767,7 @@ additional pages
     }
 }
 /* New css */
-p{text-align: justify;}
+// p{text-align: justify;}
+.mil-window-content h5, .mil-divider{display: none;}
+.no-margin{margin: 0!important}
+.smallFont{font-size:20px}
