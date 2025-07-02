@@ -293,7 +293,7 @@ const Project = () => {
       {/* pagination */}
       <div className="container mil-mb-120">
         <div className="mil-pagination mil-hidden-button">
-          <Link href="pwas" className="mil-slider-nav">
+          <Link href="gds" className="mil-slider-nav">
             <div className="mil-slider-btn-prev mil-button-sm mil-blog-prev">
               <i className="fas fa-arrow-left" />
               <span className="mil-h6">Prev</span>
@@ -305,7 +305,7 @@ const Project = () => {
             </span>
           </Link> */}
           <div className="mil-slider-nav">
-            <Link href="dws" className="mil-slider-btn-next mil-blog-next">
+            <Link href="kms" className="mil-slider-btn-next mil-blog-next">
               <span className="mil-h6">Next</span>
               <i className="fas fa-arrow-right" />
             </Link>
