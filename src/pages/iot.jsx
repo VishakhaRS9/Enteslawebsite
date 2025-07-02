@@ -16,7 +16,7 @@ const Project = () => {
         />
         <div className="mil-banner-content">
           <div className="container mil-relative">
-            <Link href="portfolio" className="mil-link link-left mil-mb-30">
+            <Link href="services" className="mil-link link-left mil-mb-30">
               <i className="fas fa-arrow-left" />
               <span>Services</span>
             </Link>
