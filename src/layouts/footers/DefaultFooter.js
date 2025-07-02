@@ -1,104 +1,94 @@
 const DefaultFooter = () => {
   return (
-    <footer className="mil-dark-bg">
+      <footer className="mil-dark-bg">
       <img src="img/deco/map.png" alt="background" className="mil-footer-bg" />
       <div className="container">
-        <div className="mil-footer-content mil-p-120-90">
-          <div className="row justify-content-between align-items-center">
-            <div className="col-xl-4 mil-mb-30">
+        <div className="mil-footer-content">
+        
+          <div className="mil-divider mil-light" />
+          <div className="row  mil-p-120-60">
+            <div className="col-md-5 col-lg-5 col-xl-5 mil-mb-30">
               <img
-                src="img/logo/logo-light.png"
+                src="img/logo/entesla-logo_light.png"
                 alt="logo"
                 className="mil-logo mil-mb-30"
                 style={{ width: 140 }}
               />
-              <p className="mil-light-soft mil-mb-30">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-                aliquam erat volutpat.
+              <p
+                className="mil-light mil-light-soft"
+                style={{ marginBottom: 45 }}
+              >
+                6/114, Mittal Estate, Marol,<br />
+Andheri East, Mumbai - 400059
+               
               </p>
-              {/* <a href="#." className="mil-app-btn mil-mb-5">
-                <i className="fab fa-google-play" />
-                <div className="mil-app-text">
-                  <span className="mil-accent mil-text-sm">
-                    Available on the
+              <ul className="mil-simple-list mil-mb-15">
+                <li className="mil-light">
+                  <span className="mil-accent">(022) </span>&nbsp;
+                  <span className="mil-light-soft">4972 0910</span>
+                </li>
+                <li>
+                  <span className="mil-accent">contact</span>
+                  <span className="mil-light mil-light-soft">
+                    @entesla.com
                   </span>
-                  <div className="mil-h6">Google Play</div>
-                </div>
-              </a>
-              <a href="#." className="mil-app-btn">
-                <i className="fab fa-apple" />
-                <div className="mil-app-text">
-                  <span className="mil-accent mil-text-sm">
-                    Download on the
-                  </span>
-                  <div className="mil-h6">App Store</div>
-                </div>
-              </a> */}
+                </li>
+              </ul>
             </div>
-            <div className="col-xl-7 mil-mt-60-adapt">
-              {/* <div className="row">
-                <div className="col-lg-7 mil-mb-30">
-                  <h3 className="mil-light mil-up-font mil-mb-30">
-                    Join The <span className="mil-accent">Entesla</span> <br />
-                    Experience
-                  </h3>
-                  <p className="mil-light-soft">
-                    Lorem ipsum dolor sit amet, consectetuer
-                    <br /> adipiscing elit, sed diam nonummy.
-                  </p>
+            <div className="col-md-7 col-lg-7 col-xl-7">
+              <div className="row ">
+                <div className="col-md-7 col-lg-7 mil-mb-60">
+                  <h4 className="mil-list-title mil-light mil-mb-30">Services</h4>
+                  <ul className="mil-hover-link-list mil-light">
+                    <li>
+                      <a href="customDesign">Customised Design Services</a>
+                    </li>
+                    <li>
+                      <a href="iot">IoT</a>
+                    </li>
+                    <li>
+                      <a href="monitoring">Monitoring</a>
+                    </li>
+                    <li>
+                      <a href="mobileApp">Mobie App Development</a>
+                    </li>
+                  
+                  </ul>
                 </div>
-                <div className="col-lg-5 mil-mb-30">
-                  <form>
-                    <input
-                      className="mil-rounded-input mil-text-center mil-mb-5"
-                      type="text"
-                      placeholder="Your email address"
-                    />
-                    <button className="mil-button mil-accent-bg mil-fw">
-                      <span>Subscribe Now</span>
-                    </button>
-                  </form>
+
+                <div className="col-md-5 col-lg-5 mil-mb-60">
+                  <h4 className="mil-list-title mil-light mil-mb-30">
+                    Case Studies
+                  </h4>
+                  <ul className="mil-hover-link-list mil-light">
+                    <li>
+                      <a href="pwas">Proximity Warning Alarm System</a>
+                    </li>
+                    <li>
+                      <a href="dws">Dimensioning Weighing System</a>
+                    </li>
+                    <li>
+                      <a href="gds">Gas Detection System
+</a>
+                    </li>
+                    <li>
+                      <a href="swpms">Solar Pump Monitoring
+</a>
+                    </li>
+                    <li>
+                      <a href="kms">Key Management
+System
+</a>
+                    </li>
+                       <li>
+                      <a href="fms">Facility Management</a>
+                    </li>
+                  </ul>
                 </div>
-              </div> */}
+               
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mil-divider mil-light" />
-        <div className="mil-footer-links">
-          <ul className="mil-social mil-light">
-            <li className="mil-adapt-links">
-              <a href="#.">Facebook</a>
-              <a href="#.">FB</a>
-            </li>
-            <li className="mil-adapt-links">
-              <a href="#.">Instagram</a>
-              <a href="#.">IG</a>
-            </li>
-            <li className="mil-adapt-links">
-              <a href="#.">LinkedIn</a>
-              <a href="#.">IN</a>
-            </li>
-            <li className="mil-adapt-links">
-              <a href="#.">Twitter</a>
-              <a href="#.">TW</a>
-            </li>
-            <li className="mil-adapt-links">
-              <a href="#.">YouTube</a>
-              <a href="#.">YT</a>
-            </li>
-          </ul>
-          <ul className="mil-additional-links mil-light">
-            <li>
-              <a href="#.">Terms &amp; Condition</a>
-            </li>
-            <li>
-              <a href="#.">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#.">Sitemap</a>
-            </li>
-          </ul>
         </div>
       </div>
       <div className="mil-footer-bottom">
