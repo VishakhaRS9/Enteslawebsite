@@ -1,11 +1,12 @@
 {
-    "title": { "first": "We specializes in transforming <br />your ideas into", "second": "innovative, cutting-edge solutions" },
+    "title": { "first": "Specialized in transforming <br />your ideas into", "second": "smart, high-performance, cutting-edge solutions." },
     "subtitle": { "first": "Ideas", "second": "Realised" },
     "button": { "label": "Let’s Talk", "link": "/contact" },
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     "slides": [
         {
-            "image": "img/photo/1.jpg"
+            "image": "img/photo/1.jpg"  
+
         },
         {
             "image": "img/photo/2.jpg"
@@ -17,18 +18,18 @@
     "items": [
         {
             "label": "Hardware",
-            "title": "Experts",
-            "text": "And here's some amazing content. It's very engaging. Right?"
+           
+            "text": "Built for dedicated functions"
         },
         {
             "label": "Firmware",
-            "title": "Experts",
-            "text": "And here's some amazing content. It's very engaging. Right?"
+           
+            "text": "Dedicated code managing device-level tasks like scheduling"
         },
         {
             "label": "Software",
-            "title": "Experts",
-            "text": "And here's some amazing content. It's very engaging. Right?"
+           
+            "text": "Interface between user and device enabling live monitoring"
         }
     ]
 }
