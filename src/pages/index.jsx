@@ -23,7 +23,74 @@ const Home1 = (props) => {
       <HeroSlideshowSlider />
     
       <Divider />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+
+<div className="container">
+<div className="feature">
+        <div className="row">
+<div className="col-lg-4">
+
+<div class="mil-hover-card"><h4 class="mil-mb-30">Hardware</h4>
+<p class="mil-mb-50">Built for dedicated functions, optimized for performance, reliability, compact design, and low energy usage
+</p>
+<div class="mil-divider mil-divider-left mil-mb-50"></div>
+<ul class="mil-simple-list mil-mb-50">
+  <li>Microcontroller Unit (MCU)
+</li>
+  <li>Digital & Analog Interfaces</li>
+  <li>Embedded Memory
+</li>
+  <li>Cloud Integration</li></ul>
+  <a href="/contact" class="mil-link"><span>Learn More</span><i class="fas fa-arrow-right"></i></a></div>
+
+
+
+          </div>
+
+<div className="col-lg-4">
+
+<div class="mil-hover-card"><h4 class="mil-mb-30">Firmware</h4>
+<p class="mil-mb-50">Dedicated code managing device-level tasks like scheduling, I/O, and network communication
+
+</p>
+<div class="mil-divider mil-divider-left mil-mb-50"></div>
+<ul class="mil-simple-list mil-mb-50">
+  <li>Optimized Resource Usage
+</li>
+  <li>Real-Time Execution
+</li>
+  <li>Rapid Responsiveness
+</li>
+  <li>Secure Operation
+</li></ul>
+  <a href="/contact" class="mil-link"><span>Learn More</span><i class="fas fa-arrow-right"></i></a></div>
+
+</div>
+
+         
+<div className="col-lg-4">
+
+<div class="mil-hover-card"><h4 class="mil-mb-30">Software</h4>
+<p class="mil-mb-50">Interface between user and device enabling live monitoring, control, and analysis
+
+</p>
+<div class="mil-divider mil-divider-left mil-mb-50"></div>
+<ul class="mil-simple-list mil-mb-50">
+  <li>Human-Machine Interface
+
+</li>
+  <li>Data Storage & Access</li>
+  <li>Processing Algorithms
+
+</li>
+  <li>Remote Management</li></ul>
+  <a href="/contact" class="mil-link"><span>Learn More</span><i class="fas fa-arrow-right"></i></a></div>
+
+</div>
+
+          </div>
+</div>
+</div>
       <Divider />
        
       {/* <TestimonialSlider /> */}
