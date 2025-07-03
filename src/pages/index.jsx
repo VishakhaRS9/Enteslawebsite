@@ -41,7 +41,7 @@ const Home1 = (props) => {
   <li>Embedded Memory
 </li>
   <li>Cloud Integration</li></ul>
-  <a href="/contact" class="mil-link"><span>Learn More</span><i class="fas fa-arrow-right"></i></a></div>
+  </div>
 
 
 
@@ -63,7 +63,7 @@ const Home1 = (props) => {
 </li>
   <li>Secure Operation
 </li></ul>
-  <a href="/contact" class="mil-link"><span>Learn More</span><i class="fas fa-arrow-right"></i></a></div>
+  </div>
 
 </div>
 
@@ -84,7 +84,7 @@ const Home1 = (props) => {
 
 </li>
   <li>Remote Management</li></ul>
-  <a href="/contact" class="mil-link"><span>Learn More</span><i class="fas fa-arrow-right"></i></a></div>
+  </div>
 
 </div>
 
