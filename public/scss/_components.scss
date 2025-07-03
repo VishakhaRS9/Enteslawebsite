@@ -715,9 +715,12 @@ banner
 }
 
 .mil-banner-sm {
-    height: 550px;
+    // height: 550px;
+    // padding-top: 220px;
+    height:350px;
+    padding-top: 200px;
     position: relative;
-    padding-top: 220px;
+    
     padding-bottom: 120px;
     display: flex;
     align-items: center;
@@ -3677,7 +3680,7 @@ footer
     filter: brightness(80%);
     position: relative;
     background-color: $dark;
-    height: 90px;
+    height:50px;
 
     & .container {
         height: 100%;
@@ -3772,3 +3775,5 @@ additional pages
 .no-margin{margin: 0!important}
 .smallFont{font-size:20px}
 .feature{padding: 40px 0;}
+.mil-banner .mil-banner-content h1{font-size:45px !important}
+.mil-mb-40{margin-bottom: 40px }
