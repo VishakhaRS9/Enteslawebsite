@@ -18,7 +18,7 @@ const DefaultFooter = () => {
                 className="mil-light mil-light-soft"
                 style={{ marginBottom: 45 }}
               >
-                6/114, Mittal Estate, Marol,<br />
+                Unit 114, Building No. 6, Mittal Estate, Marol,<br />
 Andheri East, Mumbai - 400059
                
               </p>
