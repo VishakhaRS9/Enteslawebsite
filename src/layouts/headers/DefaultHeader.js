@@ -68,7 +68,7 @@ const DefaultHeader = ({ transparent, headerTop, extarClass }) => {
                    </ul>
                 </li>
                    <li className="mil-has-children">
-                  <Link href="portfolio">Case Studies</Link>
+                  <Link href="#.">Case Studies</Link>
                    <ul>
                       <li>
                       <Link href="pwas">Proximity Warning Alarm System</Link>
