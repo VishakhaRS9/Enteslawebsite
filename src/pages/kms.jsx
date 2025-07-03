@@ -53,19 +53,19 @@ const Project = () => {
 
 </h4>
 <ol className="mil-mb-60">
-  <li>Authorization:
+  <li><strong>Authorization:  </strong>
 
     <p>This function ensures only registered users can access specific keys. The system uses biometric authentication (e.g., fingerprint) or RFID cards linked to individual user profiles. Authorization data is managed centrally by the administrator to control and customize access for each user.
 
 </p>
 </li>
-<li>Logging:
+<li><strong> Logging: </strong>
 
   <p>The logging component automatically records all key withdrawals and returns, including the identity of the user, time stamps, and key IDs. These logs provide a complete audit trail, enhancing security, accountability, and compliance with operational protocols.
 
 </p>
 </li>
-<li>Storage & Power Management:
+<li> <strong> Storage & Power Management: </strong>
 
   <p>Keys are securely stored in a smart cabinet designed for controlled and traceable handovers. The cabinet is engineered to function even during power failures, offering 2-3 hours of backup to ensure uninterrupted access and security. The modular design supports efficient management of large key volumes in fleet yards, workforce facilities, and sensitive access areas.
 
@@ -184,7 +184,7 @@ const Project = () => {
                   <img src="img/icons/sm/5.svg" alt="icon" />
                 </div>
                    <p className="mil-dark">
-                 <strong> Operational Delays:</strong>Searching for keys slows down critical workflows.
+                 <strong> Operational Delays: </strong>Searching for keys slows down critical workflows.
                 </p>
               </div>
               <div className="mil-icon-box-head mil-long mil-mb-15">
