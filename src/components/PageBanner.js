@@ -15,9 +15,9 @@ const PageBanner = ({ pageTitle, pageName }) => {
       <div className="mil-banner-content">
         <div className="container mil-relative">
           <ul className="mil-breadcrumbs mil-mb-30">
-            <li>
+            {/* <li>
               <Link href="/">Home</Link>
-            </li>
+            </li> */}
             <li>
               <a href="#">{pageName}</a>
             </li>
