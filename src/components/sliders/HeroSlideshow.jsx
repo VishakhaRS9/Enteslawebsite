@@ -32,7 +32,7 @@ const Home1BannerSlider = () => {
                 <span className="mil-light">{Content.subtitle.first}</span>{" "}
                 <span className="mil-accent">{Content.subtitle.second}</span>
               </span>
-              <h1 className="mil-mb-60">
+              <h1 className="mil-mb-40">
                 <span dangerouslySetInnerHTML={{__html : Content.title.first}} className="mil-uppercase mil-light" />{" "}
                 <span className="mil-font-3 mil-accent">{Content.title.second}</span>
               </h1>
@@ -45,9 +45,9 @@ const Home1BannerSlider = () => {
                     <span>{Content.button.label}</span>
                   </Link>
                 </div>
-                <p className="mil-button-descr mil-light-soft">
+                {/* <p className="mil-button-descr mil-light-soft">
                   {Content.description}
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="col-xl-4">
