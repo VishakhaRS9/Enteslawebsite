@@ -343,7 +343,7 @@ list
 .mil-hover-link-list {
     & li {
         list-style-type: none;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
 
         & a {
             display: flex;
@@ -514,8 +514,8 @@ button
 ------------------------------------------- */
 .mil-button {
     cursor: pointer;
-    height: 70px;
-    padding: 0 60px;
+    height: 55px;
+    padding: 0 50px;
     font-family: $font-2;
     font-size: $h6;
     color: $dark;
@@ -1307,8 +1307,8 @@ spaces
 }
 
 .mil-p-120-60 {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 10px;
 
     @media screen and (max-width: 992px) {
         padding-top: 60px;
