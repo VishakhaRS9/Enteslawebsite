@@ -24,7 +24,7 @@ Andheri East, Mumbai - 400059
               </p>
               <ul className="mil-simple-list mil-mb-15">
                 <li className="mil-light">
-                  <span className="mil-accent">(022) </span>&nbsp;
+                  <span className="mil-accent">+91 (022) </span>&nbsp;
                   <span className="mil-light-soft">4972 0910</span>
                 </li>
                 <li>
@@ -37,7 +37,7 @@ Andheri East, Mumbai - 400059
             </div>
             <div className="col-md-7 col-lg-7 col-xl-7">
               <div className="row ">
-                <div className="col-md-7 col-lg-7 mil-mb-60">
+                <div className="col-md-6 col-lg-6 mil-mb-60">
                   <h4 className="mil-list-title mil-light mil-mb-30">Services</h4>
                   <ul className="mil-hover-link-list mil-light">
                     <li>
@@ -56,7 +56,7 @@ Andheri East, Mumbai - 400059
                   </ul>
                 </div>
 
-                <div className="col-md-5 col-lg-5 mil-mb-60">
+                <div className="col-md-6 col-lg-6 mil-mb-60">
                   <h4 className="mil-list-title mil-light mil-mb-30">
                     Case Studies
                   </h4>
