@@ -20,7 +20,7 @@ const Contact = () => {
 
              <div className="row">
  <div className="col-lg-6 col-xl-6"><h4>Location</h4>
-<p>6/114, Mittal Estate,
+<p>Unit 114, Building No. 6, Mittal Estate,
   Marol, <br/> Andheri East,
   Mumbai - 400059
 </p></div>
