@@ -1,1368 +1,322 @@
-/* -------------------------------------------
-
-main
-
-------------------------------------------- */
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-html,
-body {
-    padding: 0;
-    margin: 0;
-    font-family: $font-2;
-    font-size: $text;
-    font-weight: 400;
-    color: $dt-70;
-    line-height: 170%;
-    overscroll-behavior: none;
-    scroll-behavior: smooth;
-}
-
-.mil-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-}
-
-/* -------------------------------------------
-
-typography
-
-------------------------------------------- */
-h1,
-.mil-h1,
-h2,
-.mil-h12,
-h3,
-.mil-h3,
-h4,
-.mil-h4,
-h5,
-.mil-h5,
-h6,
-.mil-h6 {
-    font-family: $font-1;
-    color: $dark;
-    font-weight: 600;
-    line-height: 140%;
-
-    & .mil-font-3 {
-        white-space: nowrap;
-    }
-}
-
-h1,
-.mil-h1 {
-    font-size: $h1;
-
-    @media screen and (max-width: 992px) {
-        font-size: $h2;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: $h2 - 4px;
-    }
-}
-
-h2,
-.mil-h2 {
-    font-size: $h2;
-
-    @media screen and (max-width: 992px) {
-        font-size: $h3 + 6px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: $h3 + 3px;
-    }
-}
-
-h3,
-.mil-h3 {
-    font-size: $h3;
-
-    &.mil-up-font {
-        font-size: $h3 + 10px;
-
-        @media screen and (max-width: 992px) {
-            font-size: $h3;
-        }
-    }
-}
-
-h4,
-.mil-h4 {
-    font-size: $h4;
-
-    @media screen and (max-width: 992px) {
-        font-size: $h5 + 6px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: $h5 + 3px;
-    }
-}
-
-h5,
-.mil-h5 {
-    font-size: $h5;
-
-    @media screen and (max-width: 992px) {
-        font-size: $h6 + 6px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: $h6 + 3px;
-    }
-}
-
-h6,
-.mil-h6 {
-    font-size: $h6;
-}
-
-.mil-bold {
-    font-weight: 500;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.mil-suptitle {
-    font-size: 18px;
-    display: inline-block;
-    color: $dark;
-    font-weight: 500;
-    font-family: $font-1;
-
-    &.mil-suptitle-2 {
-        font-size: 16px;
-        position: relative;
-        padding-left: 15px;
-
-        &:before {
-            content: '';
-            width: 7px;
-            height: 7px;
-            border-radius: 50%;
-            background-color: $accent;
-            position: absolute;
-            left: 0;
-            top: 9px;
-        }
-    }
-}
-
-.mil-font-1 {
-    font-family: $font-1;
-}
-
-.mil-font-2 {
-    font-family: $font-2;
-}
-
-.mil-font-3 {
-    font-family: $font-3;
-}
-
-.mil-uppercase {
-    text-transform: uppercase;
-}
-
-.mil-accent {
-    color: $accent;
-}
-
-.mil-light {
-    color: $light;
-}
-
-.mil-dark {
-    color: $dark;
-}
-
-.mil-light-soft {
-    color: $lt-50;
-}
-
-.mil-dark-soft {
-    color: $dt-50;
-}
-
-.mil-text-sm {
-    font-size: $text - 2px;
-}
-
-.mil-text-lg {
-    font-size: $text + 2px;
-    line-height: 220%;
-}
-
-.mil-text-center {
-    text-align: center;
-}
-
-
-blockquote {
-    background-color: $dt-5;
-    padding: 60px;
-    border-radius: 10px;
-    color: $dark;
-    font-style: italic;
-
-    @media screen and (max-width: 992px) {
-        padding: 30px;
-    }
-}
-
-/* -------------------------------------------
-
-list
-
-------------------------------------------- */
-.mil-simple-list {
-    padding: 0;
-    margin: 0;
-
-    & li {
-        color: $dark;
-        margin-bottom: 15px;
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-
-        &:before {
-            content: '';
-            width: 7px;
-            height: 7px;
-            background-color: $accent;
-            border-radius: 50%;
-            left: 0;
-            top: 0;
-            margin-right: 15px;
-        }
-    }
-}
-
-.mil-check-list {
-    margin: 0;
-    padding: 0;
-
-    & li {
-        color: $dark;
-        margin-bottom: 15px;
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-
-        &.mil-empty {
-            opacity: .2;
-            text-decoration: line-through;
-
-            &:before {
-                content: '';
-                margin-left: 3px;
-                width: 7px;
-                height: 7px;
-                background-color: $dt-30;
-                border-radius: 50%;
-                left: 0;
-                top: 0;
-                margin-right: 20px;
-            }
-        }
-
-        &:before {
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            content: "\f00c";
-            color: $accent;
-            border-radius: 50%;
-            left: 0;
-            top: 0;
-            margin-right: 15px;
-        }
-    }
-}
-
-.mil-dot-list {
-    display: flex;
-
-    & li {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
-        margin-right: 15px;
-
-        &:before {
-            content: '';
-            width: 7px;
-            height: 7px;
-            background-color: $accent;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-
-        &:first-child {
-            &:before {
-                display: none;
-            }
-
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}
-
-.mil-check-icon-list {
-    & li {
-        display: flex;
-        margin-bottom: 15px;
-
-        & img {
-            margin-right: 15px;
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-}
-
-.mil-hover-link-list {
-    & li {
-        list-style-type: none;
-        margin-bottom: 10px;
-
-        & a {
-            display: flex;
-            align-items: center;
-            color: $dark;
-            transition: $t-sm;
-
-            &:before {
-                content: '';
-                width: 7px;
-                height: 7px;
-                background-color: $accent;
-                border-radius: 50%;
-                margin-right: 0;
-                transform: scale(0);
-                transition: $t-sm;
-            }
-
-            &:hover {
-                color: $accent;
-
-                &:before {
-                    margin-right: 10px;
-                    transform: scale(1);
-                }
-            }
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    &.mil-light {
-        & a {
-            color: $lt-60;
-
-        }
-    }
-}
-
-.mil-list-title {
-    display: flex;
-    align-items: center;
-
-    &:before {
-        content: '';
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        margin-right: 15px;
-        background-color: $accent;
-    }
-}
-
-.mil-social-links {
-    display: flex;
-
-    & li {
-        list-style-type: none;
-        margin-right: 30px;
-
-        & a {
-            font-weight: 500;
-            color: $dark;
-            transition: $t-sm;
-
-            &:hover {
-                color: $accent;
-            }
-        }
-    }
-}
-
-.mil-rec-res {
-    border-top: solid 1px $dt-10;
-
-    & li {
-        border-bottom: solid 1px $dt-10;
-        list-style-type: none;
-
-        & a {
-            padding: 15px 0;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            & span {
-                max-width: 80%;
-            }
-
-            & i {
-                transform: translateX(-10px);
-                transition: $t-md;
-                color: $dt-20;
-            }
-
-            &:hover {
-                & i {
-                    transform: translateX(0);
-                    color: $accent;
-                }
-            }
-        }
-    }
-}
-/* -------------------------------------------
-
-flexbox
-
-------------------------------------------- */
-.mil-flex-hori-center {
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-.mil-adaptive-right {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-
-    @media screen and (max-width: 768px) {
-        justify-content: flex-start;
-    }
-}
-
-.mil-relative {
-    position: relative;
-}
-
-
-.mil-adaptive-center {
-    @media screen and (max-width: 992px) {
-        text-align: center;
-    }
-}
-
-.mil-fake-container {
-    width: 670px;
-    margin-left: auto;
-    padding-right: 180px;
-
-    @media screen and (max-width: 1400px) {
-        width: 570px;
-    }
-
-    @media screen and (max-width: 1200px) {
-        width: 100%;
-        padding: 120px;
-    }
-
-    @media screen and (max-width: 992px) {
-        width: 100%;
-        padding: 60px 30px;
-    }
-}
-
-/* -------------------------------------------
-
-button
-
-------------------------------------------- */
-.mil-button {
-    cursor: pointer;
-    height: 55px;
-    padding: 0 50px;
-    font-family: $font-2;
-    font-size: $h6;
-    color: $dark;
-    font-weight: 500;
-    white-space: nowrap;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: inset 0 0 0 0 $accent;
-    border: solid 2px transparent;
-    border-radius: 40px;
-    text-decoration: none;
-    transition: $t-sm;
-
-    &.mil-button-sm {
-        height: 50px;
-        padding: 0 40px;
-        font-size: $h6 - 2px;
-    }
-
-    &.mil-button-xs {
-        height: 40px;
-        padding: 0 30px;
-        font-size: $h6 - 4px;
-    }
-
-    &.mil-border {
-        border-color: $accent;
-        background-color: transparent;
-
-        &:hover {
-            box-shadow: inset 0 0 0 1px $accent;
-            backdrop-filter: blur(10px);
-        }
-
-        &.mil-gray-border {
-            border-color: $dt-10;
-
-            &:hover {
-                box-shadow: inset 0 0 0 1px $dt-10;
-                backdrop-filter: blur(10px);
-            }
-        }
-    }
-
-    &.mil-light {
-        color: $light;
-    }
-
-    &.mil-fw {
-        width: 100%;
-    }
-
-    &.mil-light-bg {
-        background-color: $light;
-        border-color: transparent;
-    }
-
-    &.mil-accent-bg {
-        background-color: $accent;
-        border-color: transparent;
-
-        &:hover {
-            filter: brightness(115%);
-        }
-    }
-
-    &.mil-icon-button {
-        padding: 0;
-        width: 70px;
-
-        & .fa-play {
-            transform: translateX(2px) translateY(1px);
-        }
-    }
-}
-
-.mil-button-with-label {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-
-    & .mil-button {
-        margin-right: 25px;
-    }
-}
-
-.mil-buttons-frame {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    & .mil-button {
-        margin-right: 30px;
-    }
-
-    &.mil-buttons-frame-center {
-        justify-content: center;
-    }
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: flex-start;
-
-        & .mil-button {
-            margin-right: 0;
-            margin-bottom: 20px;
-        }
-    }
-}
-
-/* -------------------------------------------
-
-link
-
-------------------------------------------- */
-
-.mil-link {
-    font-family: $font-1;
-    font-size: $h6;
-    color: $dark;
-    font-weight: 600;
-    white-space: nowrap;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-
-    &.mil-link-sm {
-        font-size: $h6 - 2px;
-    }
-
-    & i {
-        font-size: 12px;
-        color: $light;
-        margin-left: 15px;
-        background-color: $accent;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: $t-sm;
-    }
-
-
-    &:hover {
-        & i {
-            transform: translateX(5px);
-            filter: brightness(115%);
-        }
-    }
-
-    &.link-left {
-        & i {
-            margin-right: 15px;
-            margin-left: 0;
-        }
-
-        &:hover {
-            & i {
-                transform: translateX(-5px);
-            }
-        }
-    }
-    
-    &.mil-light {
-        color: $light;
-    }
-}
-
-/* -------------------------------------------
-
-form
-
-------------------------------------------- */
-.mil-input-frame {
-    & label {
-        display: block;
-        font-family: $font-1;
-        font-weight: 500;
-
-        & span {
-            margin-right: 15px;
-        }
-    }
-
-    & input {
-        width: 100%;
-        height: 70px;
-        font-family: $font-2;
-        color: $light;
-        font-weight: 400;
-        background-color: transparent;
-        border: none;
-        border-bottom: solid 2px $lt-10;
-        transition: $t-md;
-
-        &:hover {
-            outline: inherit;
-            border-bottom: solid 2px $lt-20;
-        }
-
-        &:focus {
-            outline: inherit;
-            border-bottom: solid 2px $lt-40;
-        }
-
-        &::placeholder {
-            color: $dt-30;
-        }
-    }
-
-    & textarea {
-        padding-top: 30px;
-        width: 100%;
-        height: 318px;
-        font-family: $font-2;
-        color: $light;
-        font-weight: 400;
-        background-color: transparent;
-        border: none;
-        border-bottom: solid 2px $lt-10;
-        transition: $t-md;
-
-        &::placeholder {
-            color: $dt-30;
-        }
-
-        &.mil-shortened {
-            height: 200px;
-        }
-
-        @media screen and (max-width: 992px) {
-            height: 200px;
-        }
-
-        &:hover {
-            outline: inherit;
-            border-bottom: solid 2px $lt-20;
-        }
-
-        &:focus {
-            outline: inherit;
-            border-bottom: solid 2px $lt-40;
-        }
-    }
-
-    &.mil-dark-input {
-
-        & input,
-        & textarea {
-            border-bottom: solid 2px $dt-10;
-            color: $dark;
-
-            &:hover {
-                border-bottom: solid 2px $dt-20;
-            }
-
-            &:focus {
-                border-bottom: solid 2px $dt-40;
-            }
-        }
-    }
-}
-
-.mil-subscribe-form {
-    position: relative;
-    width: 100%;
-
-    & input {
-        padding: 0 60px;
-        height: 80px;
-        width: 100%;
-        border: none;
-        border-radius: 40px;
-        font-family: $font-2;
-        font-size: $h6;
-        color: $dark;
-        font-weight: 400;
-        background-color: $light;
-
-        &:focus {
-            outline: inherit;
-        }
-
-        &::placeholder {
-            color: $dt-30;
-        }
-    }
-
-    & button {
-        cursor: pointer;
-        position: absolute;
-        right: 5px;
-        top: 5px;
-    }
-
-    @media screen and (max-width: 768px) {
-        & input {
-            text-align: center;
-            padding: 0 30px;
-            height: 70px;
-        }
-
-        & button {
-            margin-top: 5px;
-            position: static;
-            width: 100%;
-        }
-    }
-}
-
-.mil-rounded-input {
-    width: 100%;
-    height: 70px;
-    padding: 0 30px;
-    background-color: $light;
-    border: none;
-    border-radius: 40px;
-    font-family: $font-2;
-    font-size: $h6;
-    color: $dark;
-    font-weight: 400;
-
-    &::placeholder {
-        color: $dt-30;
-    }
-
-    &:focus {
-        outline: inherit;
-    }
-}
-
-.mil-sidebar-input-frame {
-    position: relative;
-
-    & .mil-sidebar-input {
-        width: 100%;
-        height: 70px;
-        padding: 0 30px;
-        background-color: $light;
-        border: solid 2px $dt-10;
-        border-radius: 40px;
-        font-family: $font-2;
-        font-size: $h6;
-        color: $dark;
-        font-weight: 400;
-
-        &::placeholder {
-            color: $dt-30;
-        }
-
-        &:focus {
-            outline: inherit;
-        }
-    }
-
-    & button {
-        cursor: pointer;
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        color: $light;
-        background-color: $accent;
-        border: none;
-        transition: $t-md;
-
-        &:hover {
-            filter: brightness(110%);
-
-        }
-    }
-}
-
-// attach file
-
-.mil-attach-frame {
-    display: flex;
-    flex-wrap: wrap;
-
-    & i {
-        transform: translateY(3px);
-        font-size: 18px;
-        color: $light;
-        margin-right: 15px;
-    }
-
-    & .mil-custom-file-input {
-        font-family: $font-1;
-        color: $light;
-        cursor: pointer;
-        transition: $t-sm;
-
-        &.mil-with-file {
-            color: $accent;
-        }
-
-        & input[type="file"] {
-            width: 0;
-            height: 0;
-            opacity: 0;
-            position: absolute;
-        }
-
-        &:hover {
-            color: $accent;
-        }
-    }
-
-    & .mil-text-sm {
-        width: 100%;
-        margin-left: 30px;
-    }
-
-    &.mil-dark {
-        & i {
-            color: $dark;
-        }
-
-        & .mil-custom-file-input {
-            color: $dark;
-
-            &.mil-with-file {
-                color: $accent;
-            }
-
-            &:hover {
-                color: $accent;
-            }
-        }
-    }
-}
-
-
-// checkbox
-
-.mil-checbox-frame {
-    display: flex;
-    align-items: center;
-
-    & label {
-        line-height: 250%;
-    }
-
-    & .mil-checkbox {
-        position: absolute;
-        opacity: 0;
-
-        & + label {
-            position: relative;
-            cursor: pointer;
-            padding: 0;
-        }
-
-        & + label:before {
-            content: '';
-            margin-top: -2px;
-            margin-right: 15px;
-            display: inline-block;
-            vertical-align: text-top;
-            border: solid 1px $light;
-            border-radius: 2px;
-            width: 20px;
-            height: 20px;
-            background-color: transparent;
-            transition: $t-sm;
-        }
-
-        &:hover + label:before {
-            background: $lt-10;
-            border: solid 1px $accent;
-        }
-
-        &:checked + label:before {
-            background: $accent;
-            border: solid 1px $accent;
-        }
-
-        &:disabled + label {
-            color: #b8b8b8;
-            cursor: auto;
-        }
-
-        &:disabled + label:before {
-            box-shadow: none;
-            background: #ddd;
-        }
-
-        &:checked + label:after {
-            content: '';
-            position: absolute;
-            left: 5px;
-            top: 15px;
-            background: $dark;
-            width: 2px;
-            height: 2px;
-            box-shadow:
-                2px 0 0 $dark,
-                4px 0 0 $dark,
-                4px -2px 0 $dark,
-                4px -4px 0 $dark,
-                4px -6px 0 $dark,
-                4px -8px 0 $dark;
-            transform: rotate(45deg);
-        }
-    }
-
-    &.mil-dark-input {
-        & .mil-checkbox {
-            & + label:before {
-                border-color: $dt-40;
-            }
-
-            &:hover + label:before {
-                background: $lt-10;
-                border: solid 1px $accent;
-            }
-
-            &:checked + label:before {
-                background: $accent;
-                border: solid 1px $accent;
-            }
-        }
-    }
-}
-
-/* -------------------------------------------
-
-divider
-
-------------------------------------------- */
-.mil-divider {
-    width: 100%;
-    height: 2px;
-    background-color: $dt-10;
-    position: relative;
-
-    &:before,
-    &:after {
-        content: '';
-        width: 25px;
-        border-right: solid 5px $light;
-        height: 100%;
-        background-color: $accent;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    &:after {
-        left: auto;
-        right: 0;
-        border-right: none;
-        border-left: solid 5px $light;
-
-    }
-
-    &.mil-light {
-        background-color: $lt-10;
-
-        &:before,
-        &:after {
-            border-color: $dark;
-        }
-    }
-
-    &.mil-divider-left {
-        &:after {
-            display: none;
-        }
-    }
-}
-
-/* -------------------------------------------
-
-decoration
-
-------------------------------------------- */
-
-section,
-footer {
-    position: relative;
-}
-
-.mil-deco {
-    background-image: url(../img/deco/deco-1.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: -1;
-    width: 220px;
-    height: 140px;
-
-    &.mil-deco-accent {
-        background-image: url(../img/deco/deco-2.svg);
-        z-index: 1;
-    }
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-}
-
-/* -------------------------------------------
-
-background
-
-------------------------------------------- */
-.mil-deep-bg {
-    background-color: $dt-5;
-}
-
-.mil-dark-bg {
-    background-color: $dark;
-}
-
-.mil-gradient-bg {
-    background: linear-gradient(180deg, rgba(24, 30, 38, 1) 0%, $dark 100%);
-}
-
-.mil-deco-right {
-    overflow: hidden;
-
-    &:after {
-        content: '';
-        width: 350px;
-        height: 350px;
-        background-color: $accent;
-        position: absolute;
-        top: -150px;
-        right: -150px;
-        border-radius: 50%;
-
-        @media screen and (max-width: 1200px) {
-            display: none;
-        }
-    }
-}
-
-/* -------------------------------------------
-
-spaces
-
-------------------------------------------- */
-
-.mil-mt-60-adapt {
-    margin-top: 60px;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 30px;
-    }
-}
-
-.mil-mt-70-adapt {
-    margin-top: 60px;
-
-    @media screen and (max-width: 768px) {
-        margin-top: 30px;
-    }
-}
-
-.mil-mb-60-adapt {
-    margin-bottom: 60px;
-
-    @media screen and (max-width: 768px) {
-        margin-bottom: 30px;
-    }
-}
-
-.mil-mr-15 {
-    margin-right: 15px;
-}
-
-.mil-mr-30 {
-    margin-right: 30px;
-}
-
-.mil-mt-15 {
-    margin-top: 15px !important;
-
-    @media screen and (max-width: 992px) {
-        margin-top: 0 !important;
-    }
-}
-
-.mil-mt-30 {
-    margin-top: 30px !important;
-}
-
-.mil-mt-60 {
-    margin-top: 60px !important;
-}
-
-.mil-mb-5 {
-    margin-bottom: 5px !important;
-}
-
-.mil-mb-10 {
-    margin-bottom: 5px !important;
-}
-
-.mil-mb-15 {
-    margin-bottom: 15px !important;
-}
-
-.mil-mb-20 {
-    margin-bottom: 20px !important;
-}
-
-.mil-mb-30-adapt {
-    margin-bottom: 30px;
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 0;
-    }
-}
-
-.mil-mb-30 {
-    margin-bottom: 30px !important;
-}
-
-.mil-mb-50 {
-    margin-bottom: 50px !important;
-}
-
-.mil-mb-60 {
-    margin-bottom: 60px !important;
-}
-
-.mil-mb-90 {
-    margin-bottom: 90px;
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 60px;
-    }
-}
-
-.mil-mb-120 {
-    margin-bottom: 120px;
-
-    @media screen and (max-width: 992px) {
-        margin-bottom: 60px;
-    }
-}
-
-.mil-p-90-90 {
-    padding-top: 90px;
-    padding-bottom: 90px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-}
-
-.mil-p-90-60 {
-    padding-top: 90px;
-    padding-bottom: 60px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 60px;
-        padding-bottom: 30px;
-    }
-}
-
-.mil-p-120-120 {
-    padding-top: 120px;
-    padding-bottom: 120px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-}
-
-.mil-p-120-90 {
-    padding-top: 120px;
-    padding-bottom: 90px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 60px;
-        padding-bottom: 30px;
-    }
-}
-
-.mil-p-120-60 {
-    padding-top: 40px;
-    padding-bottom: 10px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 60px;
-        padding-bottom: 0;
-    }
-}
-
-.mil-p-120-0 {
-    padding-top: 120px;
-    padding-bottom: 0;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 60px;
-        padding-bottom: 0;
-    }
-}
-
-.mil-p-0-120 {
-    padding-top: 0;
-    padding-bottom: 120px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 0;
-        padding-bottom: 60px;
-    }
-}
-
-.mil-p-120-30 {
-    padding-top: 120px;
-    padding-bottom: 30px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 60px;
-        padding-bottom: 0;
-    }
-}
-
-.mil-p-90-120 {
-    padding-top: 90px;
-    padding-bottom: 120px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 30px;
-        padding-bottom: 60px;
-    }
-}
-
-.mil-p-0-90 {
-    padding-top: 0;
-    padding-bottom: 90px;
-
-    @media screen and (max-width: 992px) {
-        padding-top: 0;
-        padding-bottom: 30px;
-    }
-}
+import Layouts from "@/src/layouts/Layouts";
+import Link from "next/link";
+const Project = () => {
+  return (
+    <Layouts>
+      {/* banner */}
+      <div className="mil-banner-sm mil-deep-bg">
+        <img
+          src="img/deco/map.png"
+          alt="background"
+          className="mil-background-image"
+        />
+        <div
+          className="mil-deco mil-deco-accent"
+          style={{ top: "47%", right: "10%", transform: "rotate(90deg)" }}
+        />
+        <div className="mil-banner-content">
+          <div className="container mil-relative">
+            <Link href="portfolio" className="mil-link link-left mil-mb-30">
+              <i className="fas fa-arrow-left" />
+              <span>All Cases</span>
+            </Link>
+            <h2 className="mil-uppercase">Proximity Warning and Alert System (PWAS)</h2>
+          </div>
+        </div>
+      </div>
+      {/* banner end */}
+      {/* project */}
+      <section className="mil-p-120-90">
+        <div className="container">
+          <div className="row flex-sm-row-reverse justify-content-between">
+            <div className="col-lg-4 col-xl-3">
+              <div class="mil-project-cover-info">
+             <img src="img/projects/pwasInfo.jpg" alt="Info"/></div>
+            </div>
+            <div className="col-lg-7 col-xl-8">
+              <span className="mil-suptitle mil-suptitle-2 mil-mb-30">
+             <h4>   Overviews</h4>
+              </span>
+              {/* <h3 className="mil-mb-30">Challenge</h3> */}
+              <p className="mil-mb-60">
+                In today’s high-risk industrial environments — from construction sites to mining operations — safety, efficiency, and precision are non-negotiable. The Proximity Warning and Alert System (PWAS) by Entesla is an advanced AI-driven technology designed to protect personnel and equipment by preventing accidents before they happen. PWAS seamlessly integrates with heavy-duty machinery and commercial vehicles, providing operators with real-time, actionable data to make swift, informed decisions.
+
+           <br/>Typically deployed as part of a comprehensive site safety strategy, PWAS serves as a critical tool for accident prevention, operator awareness, and compliance with global safety standards.
+
+</p>
+
+<h4 className="mil-mb-20">Key Components of PWAS</h4>
+<ol className="mil-mb-60">
+  <li><strong>Detection:</strong>
+    <p>PWAS combines cutting-edge millimeter wave (mmWave) radar sensors with an infrared camera mesh and HD vision cameras to create a complete 360° detection zone around heavy equipment. The system accurately identifies both humans and objects within a 15-meter radius in real-time, even in low-visibility conditions like dust, rain, or night-time operations.
+</p>
+</li>
+<li> <strong>Alerting: </strong>
+  <p>Once a human or object is detected, the system’s onboard controller generates visual and audible alerts for the operator. The audible alert (beeping) increases in intensity as the object moves closer, enabling the operator to take timely evasive action. This proactive alerting mechanism ensures heightened operator awareness at all times.
+</p>
+</li>
+<li> <strong> Monitoring & Data Logging:</strong>
+  <p>PWAS offers continuous monitoring with automated logging of detection events. The system’s intuitive interface provides easy access to detailed reports, aiding in incident reviews, safety audits, and compliance documentation. This capability supports companies in maintaining rigorous safety standards and operational transparency.
+</p>
+</li>
+<li><strong>Reliability:  </strong>
+
+  <p>PWAS is designed to work independently of external devices, ensuring maximum reliability. Built to withstand the harshest site conditions, the system complies with ARAMCO and other global safety specifications, and is bundled with Entesla’s comprehensive support services for easy deployment and long-term maintenance.
+</p>
+</li>
+  </ol>
+
+
+              <h3 className="mil-mb-30">The Entesla Advantage</h3>
+              <p className="mil-mb-60">
+              Entesla’s PWAS solution continuously detects, identifies, and alerts operators about the presence of humans and obstacles within a 360-degree perimeter of up to 15 meters around heavy machinery and commercial vehicles.
+
+
+
+
+<br/>
+The system communicates real-time proximity data to the operator’s cabin unit, helping prevent accidents and increasing safety, efficiency, and operator confidence on dynamic worksites.
+
+<br/>/
+Entesla’s PWAS solution combines mmWave radar sensors, an IR camera mesh, and HD vision cameras for accurate 3D detection of humans and objects, functioning seamlessly day or night, in extreme weather, and without the need for external tags or wearables.
+
+
+
+<br/>
+The highly customizable system supports configurable alert thresholds, detection zones, and outputs formatted data for smooth integration into client reporting, safety audits, and incident management systems, while being fully compliant with ARAMCO and other global safety standards.
+
+              </p>
+              <div className="row">
+                <div className="col-xl-6">
+                  <ul className="mil-check-icon-list mil-mb-15">
+                    <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                      Accident Prevention
+
+
+
+
+
+
 
+
+
+                      </span>
+                    </li>
+                    <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                   Operator Awareness 
+                      </span>
+                    </li>
+                    <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                   Improved Worksite Efficiency 
+
+                      </span>
+                    </li>
+                    <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                    Data Logging & Safety Audits
+
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-xl-6 mil-mb-30">
+                  <ul className="mil-check-icon-list">
+                    <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                     Cost Savings
+
+                      </span>
+                    </li>
+                    <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                     Regulatory Compliance
+
+                      </span>
+                    </li>
+                    <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                     Error Reductiond detection
+
+                      </span>
+                    </li>
+                        <li>
+                      <img src="img/icons/sm/12.svg" alt="icon" />
+                      <span className="mil-dark">
+                      Scalable Solution
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* project end */}
+      <div className="container">
+        <div className="mil-divider" />
+      </div>
+      {/* project */}
+      <section className="mil-p-120-60">
+        <div className="container">
+          <div className="row justify-content-between align-items-center">
+            <div className="col-xl-5 mil-mb-60">
+              <h3 className="mil-mb-30">Your Problem
+</h3>
+              <p className="mil-mb-30">
+            Industrial sites with heavy-duty machinery face significant safety risks when personnel and equipment operate in close proximity. Traditional safety measures, such as manual spotters or wearable tags, are prone to human error, limited coverage, and unreliable performance in harsh environments. These gaps can lead to accidents, equipment damage, downtime, and compliance issues — all driving up operational costs and liabilities.
+
+
+              </p>
+              <h4>Key challenges:
+</h4>
+              <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/3.svg" alt="icon" />
+                </div>
+                <p className="mil-dark">
+                 <strong> Safety Risks:</strong>   Limited detection leads to collisions and workplace injuries.
+
+
+                </p>
+              </div>
+              <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/2.svg" alt="icon" />
+                </div>
+                   <p className="mil-dark">
+                 <strong> Human Error: </strong>Manual monitoring and external device reliance are unreliable.
+
+                </p>
+              </div>
+              <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/5.svg" alt="icon" />
+                </div>
+                   <p className="mil-dark">
+                 <strong> Downtime & Damage:</strong>Accidents cause operational delays and equipment loss.
+                </p>
+              </div>
+              <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/6.svg" alt="icon" />
+                </div>
+                  <p className="mil-dark">
+                 <strong> Compliance Pressure:</strong> Failing to meet safety standards exposes businesses to penalties and reputational harm.
+
+                </p>
+              </div>
+            </div>
+            <div className="col-xl-6 mil-mb-60">
+              <div className="mil-project-cover">
+                <img src="img/projects/pwasProblem.jpg" alt="Problem" />
+              </div>
+            </div>
+          </div>
+          <div className="row flex-sm-row-reverse justify-content-between align-items-center">
+            <div className="col-xl-5 mil-mb-60">
+              <h3 className="mil-mb-30">Our Solution
+</h3>
+              <p className="mil-mb-30">
+             Entesla’s PWAS solution addresses these challenges with advanced 360° AI-powered detection technology that safeguards personnel and machinery in real time.
+
+
+
+              </p>
+               <h4>Key benefits:
+</h4>
+              <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/7.svg" alt="icon" />
+                </div>
+                 <p className="mil-dark">
+                 <strong> Accident Prevention: </strong> Accurate, real-time alerts reduce collision risks and enhance operator awareness.
+
+
+
+                </p>
+              </div>
+
+               <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/4.svg" alt="icon" />
+                </div>
+                <p className="mil-dark">
+                 <strong> Improved Efficiency:  </strong> Eliminates reliance on manual spotters or external devices, streamlining operations.
+
+                </p>
+              </div>
+              <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/8.svg" alt="icon" />
+                </div>
+                <p className="mil-dark">
+                 <strong> Cost Savings:</strong> Prevents equipment damage, reduces downtime, and lowers liability exposure.
+
+
+                </p>
+              </div>
+              <div className="mil-icon-box-head mil-long mil-mb-15">
+                <div className="mil-icon-frame mil-icon-frame-sm">
+                  <img src="img/icons/sm/4.svg" alt="icon" />
+                </div>
+                <p className="mil-dark">
+                 <strong>Regulatory Compliance:  </strong>Fully meets ARAMCO and other global safety standards for peace of mind.
+
+
+
+
+                </p>
+              </div>
+              
+            
+            </div>
+            <div className="col-xl-6 mil-mb-60">
+              <div className="mil-project-cover">
+                <img src="img/projects/pwasSolution.jpg" alt="Solution" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <div className="container">
+        <div className="mil-divider mil-mb-60" />
+      </div>
+      {/* pagination */}
+      <div className="container mil-mb-120">
+        <div className="mil-pagination mil-hidden-button">
+          <Link href="fms" className="mil-slider-nav">
+            <div className="mil-slider-btn-prev mil-button-sm mil-blog-prev">
+              <i className="fas fa-arrow-left" />
+              <span className="mil-h6">Prev</span>
+            </div>
+          </Link>
+          {/* <Link href="portfolio" className="mil-button-all">
+            <span>
+              <i className="fas fa-list" />
+            </span>
+          </Link> */}
+          <div className="mil-slider-nav">
+            <Link href="dws" className="mil-slider-btn-next mil-blog-next">
+              <span className="mil-h6">Next</span>
+              <i className="fas fa-arrow-right" />
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* pagination end */}
+    </Layouts>
+  );
+};
+export default Project;
