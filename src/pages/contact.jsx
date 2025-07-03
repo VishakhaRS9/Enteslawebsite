@@ -26,7 +26,7 @@ const Contact = () => {
 </p></div>
  <div className="col-lg-6 col-xl-6"><h4>Contact</h4>
 <a href="maito:contact@entesla.com" target="_blank">contact@entesla.com</a><br/>
-(022) 4972 0910</div>
++91 (022) 4972 0910</div>
 
              </div>
 
